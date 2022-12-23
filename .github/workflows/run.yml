@@ -38,5 +38,5 @@ jobs:
           SECRETID: ${{ secrets.SECRETID }}
           SECRETKEY: ${{ secrets.SECRETKEY }}
         run:  |
-          sed -i "s/TYPE = 'v4'/TYPE = 'v6'/" cf2dns_actions.py
+          sed -i "s/TYPE = 'v4'/" cf2dns_actions.py
           python cf2dns_actions.py
